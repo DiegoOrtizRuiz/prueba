@@ -1,0 +1,78 @@
+{
+	"title": "Aplicacion transaccional de Alohandes Uniandes",
+	"frameH": 600,
+	"frameW": 800,
+	"bannerPath": "./src/main/resources/config/logo.png",
+	"menuBar":
+	[
+		{ "menuTitle": "Operador",
+		  "options":
+			[
+				{
+					"label": "Adicionar",
+					"event": "adicionarOperador"
+				}	
+			]
+		},
+		{ "menuTitle": "Oferta",
+		  "options":
+			[
+				{
+					"label": "Adicionar",
+					"event": "adicionarOferta"
+				},
+				{
+					"label": "Retirar",
+					"event": "retirarOferta"
+				}
+				
+			]
+		},		
+		{ "menuTitle": "Residente",
+		  "options":
+			[
+				{
+					"label": "Adicionar",
+					"event": "adicionarResidente"
+				}
+				
+			]
+		},		
+		{ "menuTitle": "Reserva",
+		  "options":
+			[
+				{
+					"label": "Adicionar",
+					"event": "adicionarReserva"
+				},
+				{
+					"label": "Retirar",
+					"event": "retirarReserva"
+				}
+			]
+		},		
+		{ "menuTitle": "Consulta",
+		  "options":
+			[
+				{
+					"label": "Listar ganancias operadores",
+					"event": "listarGananciasOperadores"
+				},
+				{
+					"label": "Listar 20 ofertas mas populares",
+					"event": "listar20OfertasMasPopulares"
+				},
+				{
+					"label": "Mostrar indice de ocupacion de una oferta",
+					"event": "mostrarIndiceOcupacion"
+				},
+				{
+					"label": "Listar alohamientos por fecha y servicios",
+					"event": "listarAlohamientos"
+				}
+			]
+		}	
+		
+	]
+}
+	
