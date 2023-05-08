@@ -147,4 +147,10 @@ public class SQLOferta {
         return (long) q.executeUnique();
     }
     
+    public List<Object> ofertasConPocaDemanda(PersistenceManager pm) {
+        Query q = pm.newQuery(SQL,
+                "SELECT id FROM OFERTA WHERE id NOT IN (SELECT IDOFERTA FROM RESIDEN JOIN OFERTA ON RESIDEN.IDOFERTA=OFERTA.ID JOIN RESERVA ON RESIDEN.IDRESERVA = RESERVA.ID)");
+        return (List<Object>) q.executeList();
+    }
+    
 }

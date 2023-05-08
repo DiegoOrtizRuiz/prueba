@@ -3,20 +3,19 @@
 	"frameH": 600,
 	"frameW": 800,
 	"bannerPath": "./src/main/resources/config/logo.png",
-	"menuBar":
-	[
-		{ "menuTitle": "Operador",
-		  "options":
-			[
+	"menuBar": [
+		{
+			"menuTitle": "Operador",
+			"options": [
 				{
 					"label": "Adicionar",
 					"event": "adicionarOperador"
-				}	
+				}
 			]
 		},
-		{ "menuTitle": "Oferta",
-		  "options":
-			[
+		{
+			"menuTitle": "Oferta",
+			"options": [
 				{
 					"label": "Adicionar",
 					"event": "adicionarOferta"
@@ -33,22 +32,20 @@
 					"label": "Rehabilitar",
 					"event": "rehabilitarOferta"
 				}
-				
 			]
-		},		
-		{ "menuTitle": "Residente",
-		  "options":
-			[
+		},
+		{
+			"menuTitle": "Residente",
+			"options": [
 				{
 					"label": "Adicionar",
 					"event": "adicionarResidente"
 				}
-				
 			]
-		},		
-		{ "menuTitle": "Reserva",
-		  "options":
-			[
+		},
+		{
+			"menuTitle": "Reserva",
+			"options": [
 				{
 					"label": "Adicionar",
 					"event": "adicionarReserva"
@@ -66,10 +63,10 @@
 					"event": "retirarReservaColectiva"
 				}
 			]
-		},		
-		{ "menuTitle": "Consulta",
-		  "options":
-			[
+		},
+		{
+			"menuTitle": "Consulta",
+			"options": [
 				{
 					"label": "Listar ganancias operadores",
 					"event": "listarGananciasOperadores"
@@ -85,10 +82,33 @@
 				{
 					"label": "Listar alohamientos por fecha y servicios",
 					"event": "listarAlohamientos"
+				},
+				{
+					"label": "Mostrar uso por cada tipo de usuario",
+					"event": "mostrarAlohandesPorTipoUsuario"
+				},
+				{
+					"label": "Mostrar uso de alohandes por un usuario dado",
+					"event": "mostrarAlohandesPorTipoUsuarioDado"
 				}
 			]
-		}	
-		
+		},
+		{
+			"menuTitle": "Consultas avanzadas",
+			"options": [
+				{
+					"label": "Analizar la operacion de alohandes",
+					"event": "analizarOperacionAlohandes"
+				},
+				{
+					"label": "Encontrar clientes frecuentes",
+					"event": "encontrarClientesFrecuentes"
+				},
+				{
+					"label": "Encontrar ofertas sin demanda",
+					"event": "encontrarOfertasSinDemanda"
+				}
+			]
+		}
 	]
 }
-	

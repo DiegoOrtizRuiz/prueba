@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import com.google.gson.JsonObject;
@@ -1046,6 +1047,36 @@ public class Alohandes
         long [] borrrados = pa.limpiarAlohandes();	
         log.info ("Limpiando la BD de Alohandes: Listo!");
         return borrrados;
+	}
+
+	public List<Object[]> RFC5() {
+		List<Object[]> lista = pa.RFC5();
+		return lista;
+	}
+
+	public List<Object[]> RFC6(Integer resp1) {
+		List<Object[]> lista = pa.RFC6(resp1);
+		return lista;
+	}
+
+	public List<Map> RFC7(String resp1) {
+		List<Map> lista = pa.RFC7(resp1);
+		return lista;
+	}
+
+	public List<Object> RFC8one(Integer resp1) {
+		List<Object> lista = pa.RFC8one(resp1);
+		return lista;
+	}
+
+	public List<Object> RFC8two(Integer resp1) {
+		List<Object> lista = pa.RFC8two(resp1);
+		return lista;
+	}
+
+	public List<Object> RFC9() {
+		List<Object> lista = pa.RFC9();
+		return lista;
 	}
 
 

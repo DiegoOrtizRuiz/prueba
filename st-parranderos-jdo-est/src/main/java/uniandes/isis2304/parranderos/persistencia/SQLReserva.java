@@ -146,6 +146,57 @@ public class SQLReserva {
 		return (BigDecimal) q.executeUnique();
     }
 
+    public List<Object[]> rfc5(PersistenceManager pm) {
+        Query q = pm.newQuery(SQL,
+                "SELECT vinculo, count(*) as NUMERO_USUARIOS, avg(duracion_dias) AS PROMEDIO_DIAS_CONTRATADOS FROM "
+                        + pp.darTablaReserva()
+                        + " JOIN RESIDENTE ON RESERVA.IDRESIDENTE = RESIDENTE.ID GROUP BY vinculo");
+        return (List<Object[]>) q.executeList();
+    }
+    public List<Object[]> rfc6(PersistenceManager pm, Integer resp1) {
+        Query q = pm.newQuery(SQL,
+                "SELECT DURACION_DIAS as NUMERO_DE_NOCHES, TIPO as TIPO_ALOJAMIENTO, COSTO as DINERO_PAGADO FROM "
+                        + pp.darTablaReserva()
+                        + " JOIN RESIDENTE ON RESERVA.IDRESIDENTE = RESIDENTE.ID JOIN RESIDEN ON RESERVA.ID = RESIDEN.IDRESERVA JOIN OFERTA ON RESIDEN.IDOFERTA = OFERTA.ID JOIN ALOJAMIENTO ON IDALOJAMIENTO = ALOJAMIENTO.ID WHERE IDRESIDENTE = ?");
+        q.setParameters(resp1);
+        return (List<Object[]>) q.executeList();
+    }
+
+    public List<Object> rfc7semana(PersistenceManager pm, Integer resp1) {
+        Query q = pm.newQuery(SQL,
+                "SELECT SUM(COSTO) AS INGRESOS FROM RESERVA JOIN RESIDENTE ON RESERVA.IDRESIDENTE = RESIDENTE.ID JOIN RESIDEN ON RESERVA.ID = RESIDEN.IDRESERVA JOIN OFERTA ON RESIDEN.IDOFERTA = OFERTA.ID JOIN ALOJAMIENTO ON IDALOJAMIENTO = ALOJAMIENTO.ID WHERE TO_CHAR(RESERVA.FECHA, 'WW') = '"
+                        + resp1.toString() + "'GROUP BY RESERVA.FECHA");
+        return (List<Object>) q.executeList();
+    }
+
+    public List<Object> rfc7mes(PersistenceManager pm, Integer resp1) {
+        Query q = pm.newQuery(SQL,
+                "SELECT SUM(COSTO) AS INGRESOS FROM RESERVA JOIN RESIDENTE ON RESERVA.IDRESIDENTE = RESIDENTE.ID JOIN RESIDEN ON RESERVA.ID = RESIDEN.IDRESERVA JOIN OFERTA ON RESIDEN.IDOFERTA = OFERTA.ID JOIN ALOJAMIENTO ON IDALOJAMIENTO = ALOJAMIENTO.ID WHERE EXTRACT(MONTH FROM RESERVA.FECHA) = ? GROUP BY RESERVA.FECHA");
+        q.setParameters(resp1);
+        return (List<Object>) q.executeList();
+    }
+
+    public List<Object> rfc7anio(PersistenceManager pm, Integer resp1) {
+        Query q = pm.newQuery(SQL,
+                "SELECT SUM(COSTO) AS INGRESOS FROM RESERVA JOIN RESIDENTE ON RESERVA.IDRESIDENTE = RESIDENTE.ID JOIN RESIDEN ON RESERVA.ID = RESIDEN.IDRESERVA JOIN OFERTA ON RESIDEN.IDOFERTA = OFERTA.ID JOIN ALOJAMIENTO ON IDALOJAMIENTO = ALOJAMIENTO.ID WHERE EXTRACT(YEAR FROM RESERVA.FECHA) = ? GROUP BY RESERVA.FECHA");
+        q.setParameters(resp1);
+        return (List<Object>) q.executeList();
+    }
+
+    public List<Object> rfc8one(PersistenceManager pm, Integer resp1) {
+        Query q = pm.newQuery(SQL,
+                "SELECT idresidente FROM RESERVA JOIN RESIDENTE ON RESERVA.IDRESIDENTE = RESIDENTE.ID JOIN RESIDEN ON RESERVA.ID = RESIDEN.IDRESERVA JOIN OFERTA ON RESIDEN.IDOFERTA = OFERTA.ID JOIN ALOJAMIENTO ON IDALOJAMIENTO = ALOJAMIENTO.ID WHERE idalojamiento = ? HAVING count(*) >= 3 GROUP BY idresidente");
+        q.setParameters(resp1);
+        return (List<Object>) q.executeList();
+    }
+
+    public List<Object> rfc8two(PersistenceManager pm, Integer resp1) {
+        Query q = pm.newQuery(SQL,
+                "SELECT UNIQUE(IDRESIDENTE) FROM RESERVA JOIN RESIDENTE ON RESERVA.IDRESIDENTE = RESIDENTE.ID JOIN RESIDEN ON RESERVA.ID = RESIDEN.IDRESERVA JOIN OFERTA ON RESIDEN.IDOFERTA = OFERTA.ID JOIN ALOJAMIENTO ON IDALOJAMIENTO = ALOJAMIENTO.ID WHERE idalojamiento = ? AND DURACION_DIAS > 15");
+        q.setParameters(resp1);
+        return (List<Object>) q.executeList();
+    }
+
 
 
 }

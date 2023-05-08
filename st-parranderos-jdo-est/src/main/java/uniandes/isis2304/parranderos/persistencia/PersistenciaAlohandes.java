@@ -4,8 +4,10 @@ package uniandes.isis2304.parranderos.persistencia;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import javax.jdo.JDODataStoreException;
 import javax.jdo.JDOHelper;
@@ -2357,6 +2359,88 @@ public class PersistenciaAlohandes
 			}
 			pm.close();
 		}
+	}
+	
+	public List<Object[]> RFC5() {
+		return sqlReserva.rfc5(pmf.getPersistenceManager());
+	}
+
+	public List<Object[]> RFC6(Integer resp1) {
+		return sqlReserva.rfc6(pmf.getPersistenceManager(), resp1);
+	}
+
+	public List<Map> RFC7(String resp1) {
+		Map<Integer, Integer> map = new HashMap<>();
+		Map<Integer, Integer> map2 = new HashMap<>();
+		List<Map> listMap = new ArrayList<>();
+		List<Object> response = new ArrayList<>();
+		List<Object> list = new ArrayList<>();
+		List<Object> list2 = new ArrayList<>();
+		if (resp1.equals("mes")) {
+			// for i in 1 to 12
+			for (int i = 1; i <= 12; i++) {
+
+				response = sqlReserva.rfc7mes(pmf.getPersistenceManager(), i);
+				Integer suma = 0;
+				map.put(i, response.size());
+				// for object in object add suma
+				for (int j = 0; j < response.size(); j++) {
+					suma += Integer.valueOf(response.get(j).toString());
+				}
+				map2.put(i, suma);
+			}
+		} else if (resp1.equals("anio")) {
+			list = sqlReserva.rfc7anio(pmf.getPersistenceManager(), 2022);
+			list2 = sqlReserva.rfc7anio(pmf.getPersistenceManager(), 2023);
+			Integer suma = 0;
+			Integer suma2 = 0;
+			// for object in object add suma
+
+			for (int j = 0; j < list.size(); j++) {
+				suma += Integer.valueOf(list.get(j).toString());
+			}
+			for (int j = 0; j < list2.size(); j++) {
+				suma2 += Integer.valueOf(list2.get(j).toString());
+			}
+
+			map.put(2022, suma);
+			map2.put(2023, suma2);
+			map.put(2022, list.size());
+			map.put(2023, list2.size());
+		} else {
+			// for i in 1 to 53
+
+			for (int i = 1; i <= 53; i++) {
+				list = sqlReserva.rfc7semana(pmf.getPersistenceManager(), i);
+				Integer suma = 0;
+				for (int j = 0; j < list2.size(); j++) {
+					suma += Integer.valueOf(response.get(j).toString());
+				}
+				map2.put(i, suma);
+				map.put(i, list.size());
+			}
+		}
+
+		listMap.add(map);
+		listMap.add(map2);
+		return listMap;
+	}
+
+	public List<Object> RFC8one(Integer resp1) {
+		List<Object> list = new ArrayList<>();
+		list = sqlReserva.rfc8one(pmf.getPersistenceManager(), resp1);
+		return list;
+	}
+
+	public List<Object> RFC8two(Integer resp2) {
+		List<Object> list = new ArrayList<>();
+		list = sqlReserva.rfc8two(pmf.getPersistenceManager(), resp2);
+		return list;
+	}
+
+	public List<Object> RFC9() {
+		List<Object> list = sqlOferta.ofertasConPocaDemanda(pmf.getPersistenceManager());
+		return list;
 	}
 
 

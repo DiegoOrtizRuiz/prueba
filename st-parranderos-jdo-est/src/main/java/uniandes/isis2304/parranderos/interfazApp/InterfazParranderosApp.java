@@ -17,8 +17,10 @@ import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import javax.jdo.JDODataStoreException;
 import javax.swing.ImageIcon;
@@ -1213,6 +1215,158 @@ public class InterfazParranderosApp extends JFrame implements ActionListener
 			panelDatos.actualizarInterfaz(resultado);
 		}
 
+	}
+	
+	// mostrarAlohandes Por cada tipo de usuario
+	public void mostrarAlohandesPorTipoUsuario() {
+
+		List<Object[]> rf5 = alohandes.RFC5();
+		System.out.println(rf5.get(0).getClass().getDeclaredFields());
+		// for element in rf5
+		// for field in element
+		// print field
+
+		String resultado = "En mostrarAlohandesPorTipoUsuario\n\nTIPO \nCANTIDAD DE USUARIOS\nPROMEDIO DE DIAS CONTRATADOS\n\n\n";
+		for (Object[] objects : rf5) {
+			for (Object object : objects) {
+				resultado += object.toString() + "\n";
+			}
+			resultado += "\n";
+		}
+		panelDatos.actualizarInterfaz(resultado);
+	}
+
+	// mostrarAlohandes por tipo de usuario dado
+	public void mostrarAlohandesPorTipoUsuarioDado() {
+		String tipodeusuario = JOptionPane.showInputDialog(this, "Indique el id del usuario",
+				"Uso para un usuario dado", JOptionPane.QUESTION_MESSAGE);
+		Integer resp1 = Integer.valueOf(tipodeusuario);
+		List<Object[]> rf6 = alohandes.RFC6(resp1);
+		String resultado = "En mostrarAlohandesPorUsuarioDado\n\nNUM NOCHES \nTIPO ALOJAMIENTO\nDINERO PAGADO RESERVA ACTUAL\n\n\n";
+		// show the data for the first objet only
+		// for
+		for (Object[] objects : rf6) {
+			for (Object object : objects) {
+				resultado += object.toString() + "\n";
+			}
+			resultado += "\n";
+		}
+		Integer dineroPagadoTotal = 0;
+		for (Object[] objects : rf6) {
+			dineroPagadoTotal += Integer.valueOf(objects[2].toString());
+		}
+		resultado += "\nDinero pagado total: " + dineroPagadoTotal;
+		panelDatos.actualizarInterfaz(resultado);
+	}
+
+	// analizarOperacionAlohandes
+	public void analizarOperacionAlohandes() {
+		String tipodeusuario = JOptionPane.showInputDialog(this, "Indique la unidad de tiempo (semana, mes, anio)",
+				"Analizar operacion", JOptionPane.QUESTION_MESSAGE);
+		String resp1 = tipodeusuario;
+		System.out.println(resp1);
+		List<Map> rf7 = alohandes.RFC7(resp1);
+		panelDatos.actualizarInterfaz(rf7.toString());
+
+		Map<Integer, Integer> map = rf7.get(0);
+
+		Integer minValue = Collections.min(map.values());
+		Integer maxValue = Collections.max(map.values());
+
+		int minKey = 0;
+		int maxKey = 0;
+
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			int key = entry.getKey();
+			int value = entry.getValue();
+
+			if (value == minValue) {
+				minKey = key;
+				break;
+			}
+		}
+
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			int key = entry.getKey();
+			int value = entry.getValue();
+
+			if (value == maxValue) {
+				maxKey = key;
+				break;
+			}
+		}
+
+		String resultado = "";
+		resultado += resp1 + " Con mayor demanda: " + String.valueOf(maxKey) + "\n" + resp1 + " con menor demanda: "
+				+ String.valueOf(minKey) + '\n';
+
+		map = rf7.get(1);
+
+		minValue = Collections.min(map.values());
+		maxValue = Collections.max(map.values());
+
+		minKey = 0;
+		maxKey = 0;
+
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			int key = entry.getKey();
+			int value = entry.getValue();
+
+			if (value == minValue) {
+				minKey = key;
+				break;
+			}
+		}
+
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			int key = entry.getKey();
+			int value = entry.getValue();
+
+			if (value == maxValue) {
+				maxKey = key;
+				break;
+			}
+		}
+		resultado += resp1 + " Con mayor ingresos: " + String.valueOf(maxKey) + "\n" + resp1 + " con menor ingresos: "
+				+ String.valueOf(minKey);
+		panelDatos.actualizarInterfaz(resultado);
+
+	}
+
+	// encontrarClientesFrecuentes
+	public void encontrarClientesFrecuentes() {
+		String idAlojamiento = JOptionPane.showInputDialog(this, "Indique el id del alojamiento",
+				"Clientes frecuentes de un alojamiento ", JOptionPane.QUESTION_MESSAGE);
+		Integer resp1 = Integer.valueOf(idAlojamiento);
+		List<String> ids = new LinkedList<>();
+		List<Object> crit1 = alohandes.RFC8one(resp1);
+		List<Object> crit2 = alohandes.RFC8two(resp1);
+		String resultado = "IDs de usuarios frecuentes del alojamiento " + resp1 + "\n\n";
+		for (int i = 0; i < crit1.size(); i++) {
+			ids.add(crit1.get(i).toString());
+		}
+		for (int i = 0; i < crit2.size(); i++) {
+			if (!ids.contains(crit2.get(i).toString())) {
+				ids.add(crit2.get(i).toString());
+			}
+		}
+		// for element in ids resultado
+		for (String string : ids) {
+			resultado += string + "\n";
+		}
+
+		panelDatos.actualizarInterfaz(resultado);
+	}
+
+	// encontrarOfertasSinDemanda
+	public void encontrarOfertasSinDemanda() {
+		String resultado = "Las siguientes ofertas con el siguiente ID se clasifican como ofertas que tienen poca demanda: \n\n";
+		List<Object> rf9 = alohandes.RFC9();
+		// for element in ids resultado
+		for (Object object : rf9) {
+			resultado += object.toString() + "\n";
+		}
+		panelDatos.actualizarInterfaz(resultado);
 	}
 
     /**
