@@ -1,0 +1,132 @@
+19:22:09,143 (main) INFO  [uniandes.isis2304.parranderos.interfazApp.InterfazParranderosApp] - Se encontró un archivo de configuración válido: Interfaz
+19:22:09,144 (main) INFO  [uniandes.isis2304.parranderos.interfazApp.InterfazParranderosApp] - Se aplica configuración indicada en el archivo de configuración
+19:22:09,208 (main) INFO  [uniandes.isis2304.parranderos.interfazApp.InterfazParranderosApp] - Se encontró un archivo de configuración válido: Tablas BD
+19:22:35,502 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Generando los VO de Residentes
+19:22:35,680 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Generando los VO de Residentes: 14 residentes existentes
+19:22:52,152 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Listando Ofertas
+19:22:52,184 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=56, idAlojamiento=32, idOperador=3, fecha=2023-03-24 00:00:00.0, costo=700000.0, tiempoLimiteDias=15]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=58, idAlojamiento=34, idOperador=4, fecha=2023-03-24 00:00:00.0, costo=1500000.0, tiempoLimiteDias=15]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=59, idAlojamiento=35, idOperador=4, fecha=2023-03-24 00:00:00.0, costo=100000.0, tiempoLimiteDias=5]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=63, idAlojamiento=39, idOperador=6, fecha=2023-03-24 00:00:00.0, costo=800000.0, tiempoLimiteDias=8]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=64, idAlojamiento=40, idOperador=6, fecha=2023-03-24 00:00:00.0, costo=1500000.0, tiempoLimiteDias=15]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=65, idAlojamiento=41, idOperador=7, fecha=2023-03-24 00:00:00.0, costo=100000.0, tiempoLimiteDias=5]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=66, idAlojamiento=42, idOperador=18, fecha=2023-03-24 00:00:00.0, costo=2500000.0, tiempoLimiteDias=30]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=67, idAlojamiento=43, idOperador=9, fecha=2023-03-24 00:00:00.0, costo=800000.0, tiempoLimiteDias=8]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=68, idAlojamiento=44, idOperador=8, fecha=2023-03-24 00:00:00.0, costo=1500000.0, tiempoLimiteDias=15]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=69, idAlojamiento=45, idOperador=5, fecha=2023-03-24 00:00:00.0, costo=100000.0, tiempoLimiteDias=5]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=70, idAlojamiento=46, idOperador=11, fecha=2023-03-24 00:00:00.0, costo=2500000.0, tiempoLimiteDias=30]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=71, idAlojamiento=47, idOperador=12, fecha=2023-03-24 00:00:00.0, costo=1500000.0, tiempoLimiteDias=15]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=72, idAlojamiento=48, idOperador=12, fecha=2023-03-24 00:00:00.0, costo=100000.0, tiempoLimiteDias=5]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=73, idAlojamiento=48, idOperador=16, fecha=2023-03-24 00:00:00.0, costo=2500000.0, tiempoLimiteDias=30]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=74, idAlojamiento=46, idOperador=12, fecha=2023-03-24 00:00:00.0, costo=1700000.0, tiempoLimiteDias=15]
+19:22:52,185 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=75, idAlojamiento=25, idOperador=13, fecha=2023-03-24 00:00:00.0, costo=700000.0, tiempoLimiteDias=15]
+19:22:52,186 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=76, idAlojamiento=30, idOperador=14, fecha=2023-03-24 00:00:00.0, costo=800000.0, tiempoLimiteDias=8]
+19:22:52,186 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=77, idAlojamiento=47, idOperador=15, fecha=2023-03-24 00:00:00.0, costo=1500000.0, tiempoLimiteDias=15]
+19:22:52,186 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Oferta: Oferta [id=78, idAlojamiento=26, idOperador=18, fecha=2023-03-24 00:00:00.0, costo=100000.0, tiempoLimiteDias=5]
+19:22:52,186 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Listando Ofertas: 19 Ofertas existentes
+19:22:52,186 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 32
+19:22:52,228 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=32, idOperador=5, tipo=Habitacion]
+19:22:52,229 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 32
+19:22:52,256 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=32, categoria=Semisuite, capacidad=9, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,256 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 34
+19:22:52,277 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=34, idOperador=6, tipo=Habitacion]
+19:22:52,278 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 34
+19:22:52,292 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=34, categoria=Semisuite, capacidad=10, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,292 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 35
+19:22:52,310 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=35, idOperador=7, tipo=Habitacion]
+19:22:52,310 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 35
+19:22:52,326 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=35, categoria=Estandar, capacidad=9, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,326 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 35
+19:22:52,345 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=35, idOperador=7, tipo=Habitacion]
+19:22:52,345 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 39
+19:22:52,367 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=39, idOperador=5, tipo=Habitacion]
+19:22:52,367 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 39
+19:22:52,381 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=39, categoria=Estandar, capacidad=1, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,381 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 39
+19:22:52,403 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=39, idOperador=5, tipo=Habitacion]
+19:22:52,403 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 40
+19:22:52,425 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=40, idOperador=11, tipo=Habitacion]
+19:22:52,425 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 40
+19:22:52,441 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=40, categoria=Estandar, capacidad=6, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,441 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 40
+19:22:52,463 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=40, idOperador=11, tipo=Habitacion]
+19:22:52,463 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 41
+19:22:52,481 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=41, idOperador=12, tipo=Habitacion]
+19:22:52,481 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 41
+19:22:52,493 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=41, categoria=Semisuite, capacidad=3, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,493 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 42
+19:22:52,533 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=42, idOperador=12, tipo=Habitacion]
+19:22:52,533 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 42
+19:22:52,548 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=42, categoria=Compartida, capacidad=1, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,548 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 43
+19:22:52,567 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=43, idOperador=16, tipo=Habitacion]
+19:22:52,567 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 43
+19:22:52,581 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=43, categoria=Individual, capacidad=7, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,581 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 44
+19:22:52,600 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=44, idOperador=18, tipo=Habitacion]
+19:22:52,601 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 44
+19:22:52,619 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=44, categoria=Compartida, capacidad=9, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,619 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 45
+19:22:52,642 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=45, idOperador=12, tipo=Apartamento]
+19:22:52,642 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 46
+19:22:52,660 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=46, idOperador=13, tipo=Vivienda Personal]
+19:22:52,660 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 47
+19:22:52,680 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=47, idOperador=14, tipo=Apartamento]
+19:22:52,680 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 48
+19:22:52,706 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=48, idOperador=15, tipo=Apartamento]
+19:22:52,706 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 48
+19:22:52,724 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=48, idOperador=15, tipo=Apartamento]
+19:22:52,724 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 46
+19:22:52,742 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=46, idOperador=13, tipo=Vivienda Personal]
+19:22:52,742 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 25
+19:22:52,759 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=25, idOperador=3, tipo=Habitacion]
+19:22:52,759 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 25
+19:22:52,774 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=25, categoria=Estandar, capacidad=1, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,774 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 25
+19:22:52,797 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=25, idOperador=3, tipo=Habitacion]
+19:22:52,797 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 30
+19:22:52,848 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=30, idOperador=5, tipo=Habitacion]
+19:22:52,848 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 30
+19:22:52,862 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=30, categoria=Individual, capacidad=3, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,862 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 47
+19:22:52,879 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=47, idOperador=14, tipo=Apartamento]
+19:22:52,879 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 26
+19:22:52,907 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=26, idOperador=3, tipo=Habitacion]
+19:22:52,907 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 26
+19:22:52,949 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=26, categoria=Compartida, capacidad=7, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:52,949 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando operador por Id 4
+19:22:52,970 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado operador: Operador [id=4, nombre=Hotel Bolivar, tipo=Hotel]
+19:22:52,970 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 35
+19:22:52,992 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=35, idOperador=7, tipo=Habitacion]
+19:22:52,992 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 35
+19:22:53,002 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=35, categoria=Estandar, capacidad=9, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:53,003 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 35
+19:22:53,016 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=35, categoria=Estandar, capacidad=9, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:53,017 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 35
+19:22:53,071 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=35, idOperador=7, tipo=Habitacion]
+19:22:53,071 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando operador por Id 6
+19:22:53,086 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado operador: Operador [id=6, nombre=La Pola Habitaciones, tipo=Hostal]
+19:22:53,086 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 40
+19:22:53,105 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=40, idOperador=11, tipo=Habitacion]
+19:22:53,105 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 40
+19:22:53,118 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=40, categoria=Estandar, capacidad=6, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:53,118 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 40
+19:22:53,132 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=40, categoria=Estandar, capacidad=6, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:53,133 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 40
+19:22:53,149 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=40, idOperador=11, tipo=Habitacion]
+19:22:53,149 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando operador por Id 13
+19:22:53,197 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado operador: Operador [id=13, nombre=The Spot, tipo=Residencia Universitaria]
+19:22:53,197 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 25
+19:22:53,216 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=25, idOperador=3, tipo=Habitacion]
+19:22:53,216 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 25
+19:22:53,228 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=25, categoria=Estandar, capacidad=1, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:53,229 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrando alojamiento por Id 25
+19:22:53,243 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Encontrado alojamienot: Detalle_operadores [idAlojamiento=25, categoria=Estandar, capacidad=1, servicios=1, costo_seguro=1, costo_admon=1, amoblado=1]
+19:22:53,243 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Dar información COMPLETA de un alojamiento por id: 25
+19:22:53,263 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Alojamiento [id=25, idOperador=3, tipo=Habitacion]
+19:23:03,167 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Adicionando reserva colectiva del residente con id: 79
+19:23:03,298 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Adicionando reserva con id: 131
+19:23:03,384 (AWT-EventQueue-0) INFO  [uniandes.isis2304.parranderos.negocio.Alohandes] - Adicionando reserva con id: 132
+19:35:30,868 (main) INFO  [uniandes.isis2304.parranderos.interfazApp.InterfazParranderosApp] - Se encontró un archivo de configuración válido: Interfaz
+19:35:30,869 (main) INFO  [uniandes.isis2304.parranderos.interfazApp.InterfazParranderosApp] - Se aplica configuración indicada en el archivo de configuración
+19:35:30,924 (main) INFO  [uniandes.isis2304.parranderos.interfazApp.InterfazParranderosApp] - Se encontró un archivo de configuración válido: Tablas BD
