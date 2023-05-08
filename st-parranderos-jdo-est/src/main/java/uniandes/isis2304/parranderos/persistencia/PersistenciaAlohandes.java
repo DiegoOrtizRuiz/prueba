@@ -2376,6 +2376,8 @@ public class PersistenciaAlohandes
 		List<Object> response = new ArrayList<>();
 		List<Object> list = new ArrayList<>();
 		List<Object> list2 = new ArrayList<>();
+
+
 		if (resp1.equals("mes")) {
 			// for i in 1 to 12
 			for (int i = 1; i <= 12; i++) {
@@ -2403,7 +2405,7 @@ public class PersistenciaAlohandes
 				suma2 += Integer.valueOf(list2.get(j).toString());
 			}
 
-			map.put(2022, suma);
+			map2.put(2022, suma);
 			map2.put(2023, suma2);
 			map.put(2022, list.size());
 			map.put(2023, list2.size());
@@ -2413,9 +2415,12 @@ public class PersistenciaAlohandes
 			for (int i = 1; i <= 53; i++) {
 				list = sqlReserva.rfc7semana(pmf.getPersistenceManager(), i);
 				Integer suma = 0;
-				for (int j = 0; j < list2.size(); j++) {
-					suma += Integer.valueOf(response.get(j).toString());
+
+				for (int j = 0; j < list.size(); j++) {
+					suma += Integer.valueOf(list.get(j).toString());
 				}
+
+				
 				map2.put(i, suma);
 				map.put(i, list.size());
 			}
