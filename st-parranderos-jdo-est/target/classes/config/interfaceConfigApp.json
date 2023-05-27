@@ -109,6 +109,23 @@
 					"event": "encontrarOfertasSinDemanda"
 				}
 			]
+		},
+		{
+			"menuTitle": "RFC",
+			"options": [
+				{
+					"label": "Conultar consumo en alohandes",
+					"event": "consultarConsumoAlohandes"
+				},
+				{
+					"label": "Consultar consumo en alohandes v2",
+					"event": "consultarConsumoAlohandesv2"
+				},
+				{
+					"label": "Encontrar ofertas sin demanda",
+					"event": ""
+				}
+			]
 		}
 	]
 }

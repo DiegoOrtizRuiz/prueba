@@ -1369,6 +1369,40 @@ public class InterfazParranderosApp extends JFrame implements ActionListener
 		panelDatos.actualizarInterfaz(resultado);
 	}
 
+	// consultarConsumoAlohandes
+	public void consultarConsumoAlohandes() {
+		String agruparPor = JOptionPane.showInputDialog(this,
+				"1. Tipo de alojamiemto\n2. Identificador de la oferta\n 3. Identificador del alojamiento",
+				"Indique el criterio de agrupamiento",
+				JOptionPane.QUESTION_MESSAGE);
+		Integer agruparPorInt = Integer.valueOf(agruparPor);
+
+		String criterioAgruparPor = "";
+
+		if (agruparPorInt == 1) {
+			criterioAgruparPor = "ALOJAMIENTO.TIPO";
+		} else if (agruparPorInt == 2) {
+			criterioAgruparPor = "IDOFERTA";
+		} else if (agruparPorInt == 3) {
+			criterioAgruparPor = "IDALOJAMIENTO";
+		}
+
+		String ordenarPor = JOptionPane.showInputDialog(this, "1. Residente nombre\n2. Residente vinculo\n",
+				"Indique el criterio de ordenamiento", JOptionPane.QUESTION_MESSAGE);
+		Integer ordenarPorInt = Integer.valueOf(ordenarPor);
+
+		String criterioOrdenarPor = "";
+
+		if (ordenarPorInt == 1) {
+			criterioAgruparPor = "RESIDENTE.NOMBRE";
+		} else if (ordenarPorInt == 2) {
+			criterioAgruparPor = "RESIDENTE.VINCULO";
+		}
+
+		// PEDIR EL RESULTADO Y MOSTRAR EN PANTALLA
+
+	}
+
     /**
      * Genera una cadena de caracteres con la descripción de la excepcion e, haciendo énfasis en las excepcionsde JDO
      * @param e - La excepción recibida
